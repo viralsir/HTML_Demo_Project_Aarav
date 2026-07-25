@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSDemo 11 </title>
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", function(){
+
+     document.getElementById("coloroption").onchange = function(){
+
+       document.getElementById("output").style.color = this.value;
+     }
+
+  })
+
+
+
+</script>
+
+
+</head>
+<body>
+     <h1 id="output"> Heading 1 </h1>
+    Color : <select name="" id="coloroption">
+       <option value="red">Red</option>
+       <option value="green">Green</option>
+       <option value="blue">Blue</option>
+       <option value="yellow">Yellow</option>
+     </select>
+</body>
+</html>

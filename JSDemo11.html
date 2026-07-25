@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSDemo 11 </title>
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", function(){
+
+    document.getElementById("redbtn").onclick = ()=>{
+
+      document.getElementById("output").style.color="red";
+    };
+
+    document.getElementById("bluebtn").onclick = ()=>{
+
+      document.getElementById("output").style.color="blue";
+    };
+
+    document.getElementById("greenbtn").onclick = ()=>{
+
+      document.getElementById("output").style.color="green";
+    };
+
+
+  })
+
+
+
+</script>
+
+
+</head>
+<body>
+     <h1 id="output"> Heading 1 </h1>
+     <input type="button" id="redbtn" value="Red">
+     <input type="button" id="bluebtn" value="blue">
+     <input type="button" id="greenbtn" value="green">
+
+</body>
+</html>
