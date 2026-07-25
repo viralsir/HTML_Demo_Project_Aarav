@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSDemo6</title>
+  <script>
+     function save(){
+
+       let rollno= parseInt(document.getElementById("rollno").value);
+       let name= document.getElementById("name").value;
+       let math= parseInt(document.getElementById("math").value);
+       let science= parseInt(document.getElementById("science").value);
+
+       let  msg=` <li>Rollno : ${rollno} </li>
+<li>Name : ${name}</li> <li>Maths : ${math}</li> <li>Science :${science}</li>`;
+
+
+
+       if ( math >=35 && science >=35 ){
+         let total = math + science;
+         let avg = total/2;
+         let grade ="";
+         if (avg >=90)
+         {
+           grade="A";
+         }
+         else if (avg >=70)
+         {
+           grade="B";
+         }
+         else if (avg >=55)
+         {
+           grade="C";
+         }
+         else {
+           grade="D";
+         }
+         document.getElementById("output").innerHTML = msg+ `<li>Status : Pass</li> <li> Total : ${total}</li> <li> Avg : ${avg}</li> <li> Grade : ${grade}</li>`;
+
+
+
+       }
+       else {
+         document.getElementById("output").innerHTML = msg+  `<li>Status : Fail</li>`
+       }
+
+
+     }
+  </script>
+</head>
+<body>
+
+Roll No: <input type="number" id="rollno"> <br/>
+Name : <input type="text" id="name"> <br/>
+Math : <input type="number" id="math"> <br/>
+Science : <input type="number" id="science"> <br/>
+
+<input type="button" value="save" onclick="save()">
+
+<ul id="output">
+
+</ul>
+
+</body>
+</html>

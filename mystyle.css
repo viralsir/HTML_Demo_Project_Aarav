@@ -1,0 +1,14 @@
+
+h1 { color : orange ; background-color: #888888}
+li { color: blue;}
+ul>li { color: green;}
+
+.first{
+  background-color: orange;
+  color:white;
+}
+
+#second{
+  background-color: red;
+  color:white;
+}

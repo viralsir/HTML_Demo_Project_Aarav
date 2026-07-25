@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSDEMO</title>
+  <script>
+    function GreetingMsg()
+    {
+         let name=document.getElementById("name").value;
+         document.getElementById("output").innerHTML="hello welcome "+name;
+
+    }
+
+  </script>
+</head>
+<body>
+
+<input type="text" placeholder="Enter your name" id="name"> <input type="button" value="click me" onclick="GreetingMsg()">
+
+ <h1 id="output"></h1>
+
+</body>
+</html>
